@@ -1,7 +1,9 @@
 package com.wsdev.commerce.dto;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.wsdev.commerce.entities.Product;
 
+@JsonPropertyOrder({"id","name","description","price","imgUrl"})
 public class ProductDTO {
 
     private Long id;
